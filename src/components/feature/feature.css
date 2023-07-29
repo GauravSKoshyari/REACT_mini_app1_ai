@@ -1,0 +1,35 @@
+ .what-gpt3-container {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .what-gpt3-container .what-gpt3-heading {
+     flex: 2;
+ }
+
+ .what-gpt3-container .what-gpt3-content {
+     flex: 3;
+ }
+
+
+ .what-gpt3-heading div {
+     width: 38px;
+     height: 3px;
+     background: var(--gradient-bar);
+     margin-bottom: 6px;
+ }
+
+ .what-gpt3-heading p {
+     color: #FFF;
+     font-size: 18px;
+     font-weight: 800;
+     letter-spacing: -0.96px;
+ }
+
+ .what-gpt3-content p {
+
+     font-size: 14px;
+     font-weight: 500;
+     line-height: 25px;
+
+ }

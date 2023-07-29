@@ -1,0 +1,83 @@
+.case-studies .case-heading h1 {
+    font-size: 62px;
+    font-weight: 800;
+    line-height: 75px;
+    letter-spacing: -2.48px;
+    margin-bottom: 5rem;
+}
+
+
+.case-studies .blogs {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1.5fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.case-studies .blogs .blog:first-child {
+    grid-row: 1 / 3;
+}
+
+.case-studies .blogs .blog:first-child .blog-img {
+    height: 50%;
+}
+
+.case-studies .blogs .blog img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.case-studies .blogs .blog .blog-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--color-blog);
+    padding: 1rem;
+}
+
+.case-studies .blogs .blog:first-child .blog-text {
+    height: 50%;
+}
+
+.case-studies .blogs>:not(:first-child) .blog-text .date-heading {
+    margin-bottom: 5rem;
+}
+
+.case-studies .blogs .blog .blog-text p {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 35px;
+}
+
+.case-studies .blogs .blog .blog-text h1 {
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 30.287px;
+    /* 120.619% */
+}
+
+.case-studies .blogs .blog .blog-text .link p {
+    cursor: pointer;
+}
+
+@media screen and (max-width:1000px) {
+    .case-studies .blogs {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+}
+
+@media screen and (max-width:700px) {
+    .case-studies .blogs {
+        grid-template-columns: 1fr;
+    }
+
+    .case-studies .case-heading h1 {
+        font-size: 46px;
+        line-height: 60px;
+
+    }
+}

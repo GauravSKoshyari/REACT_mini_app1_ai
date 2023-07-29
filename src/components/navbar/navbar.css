@@ -1,0 +1,129 @@
+.navbar{
+    display: flex;
+    position: relative;
+}
+
+.navbar .navbar-logo {
+    margin-right: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar .navbar-logo img{
+    width: 62.557px;
+    height: 16.016px;
+}
+
+.navbar .navbar-links{
+    flex:1;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.navbar .navbar-links p,
+.navbar .sign p{
+    font-size: 18px;
+font-weight: 500;
+cursor: pointer;
+}
+
+.navbar .sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.navbar  button{
+    padding: 12px 20px;
+    font-size: 18px;
+    background-color: var(--color-button);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.deafault-hidden,
+.navbar .menu-sign,
+.navbar .menu ,
+.navbar .menu-parent
+ {
+    display: none;
+}
+
+.navbar .icon{
+    cursor: pointer;
+    display: none;
+}
+.navbar .menu-parent{
+    position: absolute;
+    right: 77px;
+    top: 113px;
+    background-color: var(--color-footer);
+    padding: 42px 50px ;
+}
+
+.navbar .menu-parent .menu{
+    margin-bottom: 32px;
+}
+
+.navbar .menu-parent p{
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-align: right;
+}
+
+@media screen and (max-width:1050px) {
+    .navbar .navbar-links{
+        display: none;
+    }
+    .deafault-hidden{
+        display: block;
+        flex:1;
+    }
+    .navbar .menu,
+    .navbar .icon,
+    .navbar .menu-parent{
+        display: block;
+    }
+ 
+}
+
+@media screen and (max-width:700px) {
+    
+    .navbar .menu-parent{
+        right: 52px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .navbar .menu-sign{
+        display: block;
+    }
+    .navbar .sign p,
+    .navbar .sign button{
+        display: none;
+    }
+
+    .navbar .menu-parent{
+        right: 40px;
+    }
+
+
+}
+
+.scale-up-center {
+	animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}

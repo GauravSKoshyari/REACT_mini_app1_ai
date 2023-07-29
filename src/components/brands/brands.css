@@ -1,0 +1,8 @@
+.brands {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3rem;
+    column-gap: 5rem;
+}

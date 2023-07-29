@@ -1,0 +1,6 @@
+export { default as CaseStudies } from './casestudies/CaseStudies'
+export { default as Footer } from './footer/Footer'
+export { default as Future } from './future/Future'
+export { default as Gpt3 } from './gpt3/Gpt3'
+export { default as Home } from './home/Home'
+export { default as Possibilities } from './possibilities/Possibilities'

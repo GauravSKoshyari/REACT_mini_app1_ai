@@ -1,0 +1,77 @@
+.register-margin {
+    margin: 3rem 4rem;
+}
+
+.register {
+    background: var(--gradient-bar);
+
+    border-radius: 10.724px;
+    border: 1px solid #000;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.register .register-content p {
+    color: #0E0E0E;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 30px;
+    /* 250% */
+}
+
+.register .register-content h3 {
+    color: #000;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 36px;
+    /* 187.5% */
+}
+
+
+.register .register-button button {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 40px;
+    background-color: #000;
+    width: 189.136px;
+    height: 59.398px;
+    border: none;
+    outline: none;
+}
+
+
+
+
+
+
+@media screen and (max-width:700px) {
+    .register-margin {
+        margin: 3rem 3rem;
+    }
+
+    .register {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .register-margin {
+        margin: 3rem 2rem;
+    }
+
+    .register .register-button button {
+        font-size: 14px;
+
+    }
+
+    .register .register-content h3 {
+        font-size: 18px;
+
+    }
+
+}
